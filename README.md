@@ -8,7 +8,7 @@ FastAPI backend for the WaitingList project.
 ```bash
 poetry install
 ```
-balljalkfkjd
+
 2. Create a `.env` file with the following variables:
 ```
 POSTGRES_USER=your_user
