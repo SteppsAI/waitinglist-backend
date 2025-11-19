@@ -84,7 +84,7 @@ async def send_waitlist_confirmation_email(name: str, email: str) -> Dict[str, A
     except ResendError as exc:
         logger.error("Resend rejected the email send request: %s", exc)
         detail = getattr(exc, "message", str(exc))
-        raise ResendServiceError(detail or "Resend stuurde een fout terug.", status_code=502) from exc
+        raise ResendServiceError(detail or "Resend sent an error back.", status_code=502) from exc
     except Exception as exc:  # noqa: BLE001
         logger.exception("Failed to send waitlist confirmation email")
-        raise ResendServiceError("Verzenden van de bevestigingsmail is mislukt.", status_code=502) from exc
+        raise ResendServiceError("Sending the confirmation email failed.", status_code=502) from exc

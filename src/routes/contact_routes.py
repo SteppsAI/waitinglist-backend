@@ -35,5 +35,5 @@ async def subscribe_waitlist(
         logger.exception("Unexpected error while processing waitlist signup")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail="Er ging iets mis bij het inschrijven. Probeer het later opnieuw.",
+            detail="Something went wrong while subscribing. Please try again later.",
         ) from exc

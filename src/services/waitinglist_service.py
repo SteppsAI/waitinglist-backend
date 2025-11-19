@@ -41,7 +41,7 @@ async def process_waitlist_signup(
 
     return WaitlistResponse(
         success=True,
-        message="Welkom op de wachtlijst! Houd je inbox in de gaten.",
+        message="Welcome to the waitlist! Keep your inbox in the loop.",
         is_existing=False
     )
 
