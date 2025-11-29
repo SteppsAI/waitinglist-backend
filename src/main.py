@@ -64,6 +64,7 @@ app.add_middleware(SessionMiddleware, secret_key=secret_key)
 origins = [
     "http://localhost:3000",
     "https://waitinglist-total.vercel.app"
+    "https://stepps-website.flat-dream-7a29.workers.dev",
     "https://stepps.ai",
 ]
 
