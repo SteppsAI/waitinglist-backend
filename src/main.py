@@ -65,7 +65,8 @@ origins = [
     "http://localhost:3000",
     "https://waitinglist-total.vercel.app"
     "https://stepps-website.flat-dream-7a29.workers.dev",
-    "https://stepps.ai",
+    "https://stepps.ai"
+    "https://www.stepps.ai",
 ]
 
 
